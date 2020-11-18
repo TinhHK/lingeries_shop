@@ -129,27 +129,47 @@ body.hc-nav-open {
 
 /*search desktop*/
 #desktop-search {
-    height: 250px;
+    height: 0%;
     position: fixed;
     top: 0;
     width: 100%;
     opacity: 0;
-    visibility: visible;
-    transition: all 0.5s;
-    z-index: 99;
+    transition: height 0.5s ease;
     background-color: white;
     visibility: hidden;
 }
 #desktop-search.active {
+    height: 250px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+#desktop-search .form-search h4 {
+    transition: all .5s ease;
+    transform: translateY(-30px);
+}
+#desktop-search.active .form-search h4 {
+    transform: translateY(0px);
+}
+#desktop-search.active .form-search form {
+    transition-delay: .3s;
+    transform: translateY(0px);
     opacity: 1;
     visibility: visible;
 }
+
 .form-search {
     height: 250px;
     width: 900px;
     max-width: 90%;
     text-align: center;
     box-sizing: border-box;
+}
+.form-search form {
+    transition: all .5s linear;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
 }
 .input-search {
     border: none;

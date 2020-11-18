@@ -111,7 +111,7 @@ $(document).ready(function(){
         $('#desktop-search').addClass('active');
         $('.full-desktop-blur').addClass('active');
     });
-    $('.full-desktop-blur, .search-close-desktop i').on('click', function() {
+    $('.full-desktop-blur, .search-close-desktop').on('click', function() {
         $('#desktop-search').removeClass('active');
         $('.full-desktop-blur').removeClass('active');
     });
