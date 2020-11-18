@@ -1,0 +1,303 @@
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+
+}
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    .search-bar {
+        font-size: 12px;
+        border-radius: 15px;
+    }
+    .head-cat {
+        font-size: 18px;
+    }
+    .sub-head-cat {
+        font-size: 11px;
+        line-height: 10px;
+    }
+    .subcribe-head-cat, .button-shop-cat {
+        font-size: 8px;
+    }
+    .cate-title {
+        font-size: 28px;
+    }
+    ul.cate-item {
+        font-size: 12px;
+    }
+    .next-icon-outside {
+        right: 0;
+        top: -16%;
+        padding-left: 0px;
+    }
+    .prev-icon-outside {
+        right: 3%;
+        top: -16%;
+    }
+    .product-title {
+        font-size: 15px;
+    }
+    .sub-product-title {
+        font-size: 8px;
+    }
+    #product-1 .container .row, #product-2 .container .row, #blog .container .row {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .icon-hover i {
+        padding: 5px;
+    }
+    .tool-top-prod {
+        font-size: 5px
+    }
+    .suport-content h4 {
+        font-size: 13px;
+        margin: 0;
+    }
+    .suport-content span {
+        font-size: 7px;
+    }
+    .label-sale, .label-hot, .label-new {
+        font-size: 8px;
+    }
+    .adv-content {
+        top: 19%;
+    }
+    .adv-head {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .sub-adv-head {
+        font-size: 80px;
+    }
+    .adv-subcribe {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .shop-now {
+        font-size: 8px;
+    }
+    .blog-title-slide {
+        font-size: 10px;
+    }
+    .blog-title {
+        font-size: 14px;
+    }
+    .adv_2_content {
+        top: 15%;
+    }
+    .adv2-head {
+        font-size: 31px;   
+    }
+    .adv-sub-head {
+        font-size: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .button-contact {
+        font-size: 7px;
+        padding: 3px 7px;
+    }
+    .adv2_letter {
+        top: 15%;
+    }
+    .letter-head {
+        font-size: 18px;
+    }
+    .letter-sub-head {
+        margin: 10px 0px;
+        font-size: 8px;
+    }
+    .number-percent {
+        font-size: 12px;
+    }
+    .email-input {
+        font-size: 8px;
+    }
+    .button-subcribe {
+        margin-top: 15px;
+        font-size: 8px;
+        padding: 3px 7px;
+    }
+    .line {
+        padding: 15px 0px;
+    }
+    #footer {
+        padding-top: 30px;
+        font-size: 7px;
+    }
+    .store-head {
+        font-size: 13px;
+        font-weight: 700;
+        padding-top: 38px;
+    }
+    .store-address {
+        margin-top: 13px;
+    }
+    .link-item i {
+        padding-right: 5px;
+    }
+    .link-item, .link-item-last {
+        padding: 5px 0px;
+    }
+    .date-list {
+        top: 5px;
+    }
+    .blog-para {
+        font-size: 10px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .slide_1_content {
+        left: 14%;
+        top: 17%;
+    }
+    #slide-2 {
+        margin: 30px 0 20px;
+    }
+    #slide-2 .container .row .col-md-4 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .slide2-content {
+        left: 20%; 
+        top: 25%;
+    }
+    .prev-icon-outside, .next-icon-outside {
+        top: -11%;
+    }
+    #support .container .row .col-md-4 {
+        display: flex;
+        justify-content: center;
+    }
+    #support .container .row .col-md-4:not(last-child) {
+       margin-bottom: 10px;
+    }
+    .suport-content {
+        left: 45%;
+    }
+    .suport-content h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .suport-content span {
+        font-size: 12px;
+    }
+    .adv-head {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .sub-adv-head {
+        font-size: 50px;
+        line-height: 20px;
+    }
+    .adv-subcribe {
+        font-size: 10px;
+        margin-top: 24px;
+    }
+    .blog-title-slide {
+        font-size: 7px;
+    }
+    .adv2_letter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .letter-sub-head {
+        margin: 15px 0px;
+        font-size: 10px;
+        width: 58%;
+    }
+    .button-subcribe {
+        margin-top: 20px;
+    }
+    #advertise-2 .container .row .col-md-4 {
+        margin-top: 10px;
+    }
+    #footer .container .row  .col-md-4{
+        text-align: center;
+    }
+    
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .icon-menu-mobile i {
+        font-size: 12px;
+    }
+    .cart-number {
+        bottom: 4px;
+        font-size: 9px;
+        line-height: 7px;
+    }
+    ul.cate-item {
+        font-size: 8px;
+    }
+    .button-shop {
+        margin-top: 20px;
+    }
+    .slide2-content {
+        left: 30%;
+        top: 20%;
+    }
+    .cate-title {
+        font-size: 20px;
+    }
+    .slash {
+        margin: 0px 4px;
+    }
+    .prev-icon-outside, .next-icon-outside {
+        top: -16%;
+    }
+    .prev-icon-outside {
+        right: 5%;
+    }
+    .suport-content {
+        width: 50%;
+    }
+    .suport-content h4 {
+        font-size: 16px;
+    }
+    .adv-head {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .sub-adv-head {
+        font-size: 35px;
+        line-height: 20px;
+    }
+    .adv-subcribe {
+        font-size: 8px;
+        margin-top: 5px;
+    }
+    .adv-content {
+        right: 30px;
+    }
+    .blog-title-slide {
+        height: 20px;
+        overflow: hidden;
+        width: 70%;
+    }
+    .adv2-head {
+        font-size: 20px;
+    }
+    .adv-sub-head {
+        font-size: 8px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    .menu-mobile .container .row .icon-menu-mobile .slash {
+        margin: 0px 15px;
+    }
+    .brand {
+        padding: 0px 5px;
+    }
+    .adv_2_content {
+        top: 10%;
+        width: 75%;
+    }
+
+}
+
+
