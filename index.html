@@ -43,10 +43,12 @@
                 </nav>
             </div>
             <div class="col-lg-3 d-flex justify-content-end align-items-center">
-                <i class="fas fa-search ml-2"></i><span class="slash">/</span>
-                <i class="fas fa-user"></i><span class="slash">/</span>
-                <i class="fas fa-shopping-cart position-relative"><span class="cart-number">1</span></i><span class="slash">/</span>
-                <i class="fas fa-cog"></i>
+               <ul class="icon-nav">
+                   <a href="#" id="show-btn-desktop"><i class="fas fa-search ml-2"></i><span class="slash">/</span></a>
+                   <a href="#"><i class="fas fa-user"></i><span class="slash">/</span></a>
+                   <a href="#"><i class="fas fa-shopping-cart position-relative"><span class="cart-number">1</span></i><span class="slash">/</span></a>
+                   <a href="#"><i class="fas fa-cog"></i></a>
+               </ul>
             </div>
 
         </div>
@@ -54,17 +56,20 @@
 <!--    desktop search-->
     <div id="desktop-search">
         <div class="container-fluid">
-            <div class="row">
-               <div class="form-search mt-5">
+            <div class="row justify-content-center">
+               <div class="form-search pt-5">
                    <h4 class="mb-5">Bạn đang tìm kiếm gì?</h4>
-                   <form action="/search" method="get">
+                   <form action="https://www.google.com" method="get" class="position-relative">
                        <input type="text" class="input-search" placeholder="Nhập từ khóa để tìm ...">
-                       <button type="submit">
+                       <button type="submit" class="button-search-inline">
                            <i class="fa fa-search"></i>
                        </button>
                    </form>
                </div>
             </div>
+            <button class="search-close-desktop">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
     </div>
     <div class="full-desktop-blur"></div>

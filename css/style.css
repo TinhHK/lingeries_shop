@@ -77,6 +77,12 @@ ul.desktop-menu {
     font-size: 12px;
     line-height: 10px;
 }
+.icon-nav a {
+    color: black;
+}
+.icon-nav a:hover {
+    text-decoration: none;
+}
 /*menu-mobile*/
 .logo-icon-mob {
     max-width: 100%;
@@ -95,9 +101,6 @@ ul.desktop-menu {
 }
 body.hc-nav-open {
     position: inherit;
-}
-.menumobile .container-fluid .row {
-    
 }
 .menumobile .container-fluid .row:nth-child(2) {
     position: sticky;
@@ -127,24 +130,32 @@ body.hc-nav-open {
 /*search desktop*/
 #desktop-search {
     height: 250px;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
-    opacity: 1;
+    opacity: 0;
     visibility: visible;
     transition: all 0.5s;
     z-index: 99;
     background-color: white;
+    visibility: hidden;
+}
+#desktop-search.active {
+    opacity: 1;
+    visibility: visible;
 }
 .form-search {
     height: 250px;
-    width: 100%;
+    width: 900px;
+    max-width: 90%;
     text-align: center;
+    box-sizing: border-box;
 }
 .input-search {
     border: none;
     border-bottom: 2px solid #8a8584;
-    width: 80%;
+    width: 100%;
+    height: 44px;
 }
 .input-search:active, .input-search:focus {
     outline: none;
@@ -158,9 +169,41 @@ body.hc-nav-open {
     left: 0;
     position: fixed;
     z-index: 10;
-    opacity: 1;
     transition: all 0.5s ease;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.full-desktop-blur.active {
+    opacity: 1;
+    visibility: visible;
+}
+.button-search-inline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: #666;
+    font-size: 18px;
+    width: 43px;
+    height: 43px;
+}
+.search-close-desktop {
+    position: absolute;
+    bottom: 85%;
+    right: 2%;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+}
+.search-close-desktop:focus {
+    outline: none;
+}
+.search-close-desktop:hover i {
+    color: orange;
+}
+.search-close-desktop i {
+    transition: color 1s;
 }
 
 
