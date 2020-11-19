@@ -1,59 +1,51 @@
+var prod_slide_setting = {
+    arrows: true,
+    slidesToShow: 4,
+    prevArrow: '<i class="far fa-arrow-alt-circle-left prev-icon-outside"></i>',
+    nextArrow: '<i class="far fa-arrow-alt-circle-right next-icon-outside"></i>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+            }
+
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+
+        }]
+};
+function slideActiveTabPro() {
+    $('.container .tab-content .row.active').slick(prod_slide_setting);
+}
+
 $(document).ready(function(){
     $('#slide-1 .container').slick({
         arrows: false,
         autoplay: false,
         autoplaySpeed: 2000
     });
-    $('#product-1 .container .row').slick({
-        arrows: true,
-        slidesToShow: 4,
-        prevArrow: '<i class="far fa-arrow-alt-circle-left prev-icon-outside"></i>',
-        nextArrow: '<i class="far fa-arrow-alt-circle-right next-icon-outside"></i>',
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 4,
-                }
-
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                }
-
-            }]
+    slideActiveTabPro();
+    
+    $('.cate-item .nav-item').on('click', function() {
+        let  ele = this;
+        setTimeout(function() {
+            let id_pro_cate = '#'+$(ele).parent().data('proCate');
+            let data_slick = $(ele).find('a:first-child').data('slick');
+            console.log(id_pro_cate);
+            console.log(data_slick);
+            $(id_pro_cate + ' .container .tab-content .row.sliding').slick('unslick');
+            $(id_pro_cate + ' .container .tab-content .row.sliding').removeClass('sliding');
+            $(id_pro_cate + ' .container .tab-content .row#'+ data_slick).slick(prod_slide_setting);
+            $(id_pro_cate + ' .container .tab-content .row#'+ data_slick).addClass('sliding');
+        }, 200);
     });
-    $('#product-2 .container .row').slick({
-        arrows: true,
-        slidesToShow: 4,
-        prevArrow: '<i class="far fa-arrow-alt-circle-left prev-icon-outside"></i>',
-        nextArrow: '<i class="far fa-arrow-alt-circle-right next-icon-outside"></i>',
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 4,
-                }
-
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                }
-
-            },
-
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                }
-
-            }]
-    });
+    
+    
     $('#blog .container .row').slick({
         arrows: true,
         slidesToShow: 3,

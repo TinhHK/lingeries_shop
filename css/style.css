@@ -308,6 +308,9 @@ div#slide-1 div.container > div.row {
 }
 
 /*product -1 */
+.slick-slide:focus {
+    outline: none;
+}
 #product-1, #product-2, #blog {
     font-family: OpenSans;
     color: #9c9c9c;
@@ -357,13 +360,13 @@ ul.cate-item {
 }
 .next-icon-outside {
     right: 0;
-    top: -11%;
+    top: -13%;
     
 }
 .prev-icon-outside {
     padding-left: 20px;
     right: 3%;
-    top: -11%;
+    top: -13%;
 }
 #product-1 .container .row, #product-2 .container .row, #blog .container .row {
     margin-top: 20px;
