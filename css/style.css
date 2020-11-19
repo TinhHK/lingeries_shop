@@ -496,6 +496,9 @@ ul.cate-item {
     margin-top: 15px;
     font-size: 12px;
 }
+#blog .prev-icon-outside, #blog .next-icon-outside {
+    top: -11%;
+}
 /*advertising-2*/
 #advertise-2 {
     margin-bottom: 30px;

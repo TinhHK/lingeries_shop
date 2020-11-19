@@ -1,6 +1,8 @@
 var prod_slide_setting = {
     arrows: true,
     slidesToShow: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow: '<i class="far fa-arrow-alt-circle-left prev-icon-outside"></i>',
     nextArrow: '<i class="far fa-arrow-alt-circle-right next-icon-outside"></i>',
     responsive: [
@@ -36,8 +38,6 @@ $(document).ready(function(){
         setTimeout(function() {
             let id_pro_cate = '#'+$(ele).parent().data('proCate');
             let data_slick = $(ele).find('a:first-child').data('slick');
-            console.log(id_pro_cate);
-            console.log(data_slick);
             $(id_pro_cate + ' .container .tab-content .row.sliding').slick('unslick');
             $(id_pro_cate + ' .container .tab-content .row.sliding').removeClass('sliding');
             $(id_pro_cate + ' .container .tab-content .row#'+ data_slick).slick(prod_slide_setting);
@@ -51,6 +51,8 @@ $(document).ready(function(){
         slidesToShow: 3,
 //        autoplay: true,
         autoplaySpeed: 1000,
+        prevArrow: '<i class="far fa-arrow-alt-circle-left prev-icon-outside"></i>',
+        nextArrow: '<i class="far fa-arrow-alt-circle-right next-icon-outside"></i>',
         responsive: [
             {
                 breakpoint: 768,
@@ -60,7 +62,7 @@ $(document).ready(function(){
 
             }]
     });
-    $('.line').slick({
+    $('#link .container .line').slick({
         arrows: false,
         slidesToShow: 5,
         autoplay: true,
