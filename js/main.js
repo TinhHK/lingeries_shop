@@ -1,7 +1,7 @@
 var prod_slide_setting = {
     arrows: true,
     slidesToShow: 4,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow: '<i class="far fa-arrow-alt-circle-left prev-icon-outside"></i>',
     nextArrow: '<i class="far fa-arrow-alt-circle-right next-icon-outside"></i>',
@@ -11,14 +11,18 @@ var prod_slide_setting = {
             settings: {
                 slidesToShow: 4,
             }
-
         },
         {
-            breakpoint: 768,
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 3,
+            }
+        }, {
+            breakpoint: 426,
             settings: {
                 slidesToShow: 2,
+                arrows: false,
             }
-
         }]
 };
 function slideActiveTabPro() {
@@ -28,13 +32,17 @@ function slideActiveTabPro() {
 $(document).ready(function(){
     $('#slide-1 .container').slick({
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000
     });
     slideActiveTabPro();
     
     $('.cate-item .nav-item').on('click', function() {
         let  ele = this;
+        let time = 200;
+        if($(window).width() < 426) {
+            time = 150;
+        }
         setTimeout(function() {
             let id_pro_cate = '#'+$(ele).parent().data('proCate');
             let data_slick = $(ele).find('a:first-child').data('slick');
@@ -42,14 +50,14 @@ $(document).ready(function(){
             $(id_pro_cate + ' .container .tab-content .row.sliding').removeClass('sliding');
             $(id_pro_cate + ' .container .tab-content .row#'+ data_slick).slick(prod_slide_setting);
             $(id_pro_cate + ' .container .tab-content .row#'+ data_slick).addClass('sliding');
-        }, 200);
+        }, time);
     });
     
     
     $('#blog .container .row').slick({
         arrows: true,
         slidesToShow: 3,
-//        autoplay: true,
+        autoplay: true,
         autoplaySpeed: 1000,
         prevArrow: '<i class="far fa-arrow-alt-circle-left prev-icon-outside"></i>',
         nextArrow: '<i class="far fa-arrow-alt-circle-right next-icon-outside"></i>',
@@ -60,6 +68,12 @@ $(document).ready(function(){
                     slidesToShow: 1,
                 }
 
+            }, {
+                breakpoint: 426,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                }
             }]
     });
     $('#link .container .line').slick({
@@ -76,7 +90,7 @@ $(document).ready(function(){
 
         },
         {
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
                 slidesToShow: 3,
             }
