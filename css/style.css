@@ -639,6 +639,7 @@ ul.cate-item {
 .img-product {
     position: relative;
     border: 6px solid transparent;
+    transition: all 1s;
 }
 .blur-layer {
     position: absolute;
@@ -649,13 +650,18 @@ ul.cate-item {
     height: 100%;
     justify-content: center;
     align-items: center;
-    display: none;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
 }
 .img-product:hover {
     border: 6px solid #e18cad;   
+    
 }
 .img-product:hover .blur-layer {
     display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 .img-product:hover ~ .product-title, .img-product:hover ~ .price-star .product-price {
     color: #c1185b;
@@ -666,6 +672,7 @@ ul.cate-item {
     background-color: #c1185b;
     padding: 0px 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .icon-hover i {
     padding: 10px;
@@ -677,9 +684,9 @@ ul.cate-item {
 }
 .tool-top-prod {
     text-transform: uppercase;
-    color: #c1185b;
+    color: #af1b56;
     font-size: 10px;
-    font-weight: 300;
+    font-weight: 700;
     position: absolute;
     top: 104%;
     width: 160%;
