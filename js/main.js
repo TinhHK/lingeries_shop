@@ -108,10 +108,10 @@ $(document).ready(function(){
     // buton search mobile
     $('#search-mobile').on('click', function (e) {
         $('.menumobile .container-fluid .row:first-child').addClass('d-none');
-        $('.menumobile .container-fluid .row:nth-child(2)').removeClass('d-none');
+        $('.menumobile .container-fluid .row:nth-child(2)').addClass('search-mobile-display');
     });
     $('#close-search-mobile').on('click', function (e) {
-        $('.menumobile .container-fluid .row:nth-child(2)').addClass('d-none');
+        $('.menumobile .container-fluid .row:nth-child(2)').removeClass('search-mobile-display');
         $('.menumobile .container-fluid .row:first-child').removeClass('d-none');
     });
     // button search desktop

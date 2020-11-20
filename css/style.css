@@ -108,7 +108,12 @@ body.hc-nav-open {
     top: 0;
     z-index: 100;
     background-color: white;
-    height: inherit;
+    transition: all .5s ease-out;
+    height: 0px;
+    opacity: 0;
+}
+.menumobile .container-fluid .row.search-mobile-display {
+    opacity: 1;
     height: 40px;
 }
 .hc-offcanvas-nav .nav-container, .hc-offcanvas-nav .nav-wrapper, .hc-offcanvas-nav ul {
@@ -225,6 +230,7 @@ body.hc-nav-open {
 .search-close-desktop i {
     transition: color 1s;
 }
+
 
 
 /*slide 1*/
