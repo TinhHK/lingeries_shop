@@ -1,5 +1,11 @@
 /* Extra large devices (large laptops and desktops, 1200px and down) */
 @media only screen and (max-width: 1200px) {
+    #store-slide .sub-head, #store-slide .subcribe-head {
+        font-size: 1.5rem;
+    }
+    #store-slide .head {
+        font-size: 4rem;
+    }
 
 }
 /* Large devices (laptops/desktops, 992px and down) */
@@ -33,12 +39,7 @@
         right: 3%;
         top: -16%;
     }
-    .product-title {
-        font-size: 15px;
-    }
-    .sub-product-title {
-        font-size: 8px;
-    }
+    
     #product-1 .container .row, #product-2 .container .row, #blog .container .row {
         margin-top: 20px;
         font-size: 13px;
@@ -213,7 +214,34 @@
     #blog .prev-icon-outside, #blog .next-icon-outside {
         top: -12%;
     }
-   
+/*    store*/
+    #store-slide .sub-head, #store-slide .subcribe-head {
+        font-size: 1rem;
+    }
+    #store-slide .button-shop {
+        font-size: 0.6rem;
+        margin-top: 0;
+    }
+    .filter-item .line-gray {
+        display: none;
+    }
+    .filter-item:not(:first-child) {
+         margin: 0; 
+    }
+/*    store*/
+    #breadcrumb ul {
+        font-size: .8rem;
+    }
+    .filter-item {
+        font-size: 0.9rem;
+    }
+    .one-image {
+        margin-bottom: 1rem;
+    }
+    .label-sale, .label-hot, .label-new {
+        font-size: 12px;
+    }
+    
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 426px) {
@@ -347,7 +375,42 @@
     .icon-hover {
         padding: 0px 4px;
     }
+/*    store*/
+    .label-sale, .label-hot, .label-new {
+        height: 8%;
+    }
+    #store-slide .sub-head, #store-slide .subcribe-head {
+        font-size: .8rem;
+    }
+    #store-slide .head {
+        font-size: 2rem;
+    }
+    #store-slide .slide_1_content {
+        left: 0%;
+        top: 3%;
+    }
+    #store-slide .button-shop {
+        font-size: 0.5rem;
+    }
     
+}
+@media only screen and (max-width: 426px) {
+/*    store*/
+    #store-slide .head {
+        font-size: 1.5rem;
+    }
+    .pro-list-head ul li i {
+        font-size: 1rem;
+    }
+    .icon-list {
+        padding: 0;
+    }
+    #get-ten h3 {
+        font-size: 1.2rem;
+    }
+    #get-ten span {
+        font-size: .9rem;
+    }
 }
 
 
