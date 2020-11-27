@@ -260,6 +260,34 @@ $(document).ready(function(){
         textBtn : 'Load more',
         classBtn : 'btn btn-info',
     });
+//    product detail 
+    $('#related-pros').slick({
+        arrows: true,
+        slidesToShow: 3,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        prevArrow: '<i class="far fa-arrow-alt-circle-left prev-icon-outside"></i>',
+        nextArrow: '<i class="far fa-arrow-alt-circle-right next-icon-outside"></i>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                }
+            }]
+    });
     
 
 

@@ -22,6 +22,7 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
+
 /*desktop-menu*/
 .top-menu {
     background-color: #464646;
@@ -904,6 +905,95 @@ ul.cate-item {
 }
 .pro-list-head div:first-child {
     background: white;
+}
+#breadcrumb ul li a:hover {
+    text-decoration: none;
+    color: orangered;
+}
+/*product-detail*/
+.pro-detail-des {
+    color: #acacac;
+    font-size: 0.75rem;
+}
+.pro-detail-des-head {
+    font-size: 1.5rem;
+    color: black;
+}
+.pro-detail-des .sku {
+    text-decoration: underline;
+}
+.pro-detail-des .product-price {
+    font-size: 2.25rem;
+    color: #c2185b;
+}
+.icon-line {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.pro-detail-des > .icon-line {
+    border-top: 1px dashed #acacac;
+    border-bottom: 1px dashed #acacac;
+}
+.pro-detail-des .icon-line li:first-child {
+    padding: .5rem 1rem .5rem 0;
+}
+.pro-detail-des .icon-line li:not(:first-child) {
+    padding: .5rem .5rem;
+}
+.no-list-style {
+    list-style-type: none;
+}
+.price-color {
+    color: #c2185b;
+}
+.gra-red {
+    width: 2rem;
+    height: 1rem;
+    background-image: linear-gradient(to right, rgba(255,0,102,1), rgba(255,0,102,.3));
+}
+.gra-blue {
+    width: 2rem;
+    height: 1rem;
+    background-image: linear-gradient(to right, rgba(0,102,255,1), rgba(0,102,255,.3));
+}
+.gra-red:hover, .gra-blue:hover {
+    cursor: pointer;
+}
+.btn-add-to-cart {
+    background-color: #ff4081;
+    color: white;
+    font-size: .8rem;
+}
+#more-info, #data-sheet, #reviews {
+    color: #acacac;
+    font-size: 0.9rem;
+}
+.pro-detail-des-nav {
+    width: 100%;
+    border-bottom: 4px solid #ebebeb;
+    position: relative;
+}
+.pro-detail-des-nav li a{
+    color: #acacac;
+}
+
+.pro-detail-des-nav li:hover {
+    border-bottom:  4px solid #ff4081;
+    margin-bottom: -4px;
+}
+.pro-related-head h3{
+    background-color: white;
+    padding-right: 2rem;
+}
+.pro-related-head .line-gray {
+    top: 30%;
+}
+#related-pros .prev-icon-outside, #related-pros .next-icon-outside {
+    top: -7%;
+}
+#related-pros .prev-icon-outside {
+    right: 4%;
 }
 
 
