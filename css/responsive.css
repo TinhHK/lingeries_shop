@@ -1,10 +1,14 @@
 /* Extra large devices (large laptops and desktops, 1200px and down) */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1025px) {
     #store-slide .sub-head, #store-slide .subcribe-head {
         font-size: 1.5rem;
     }
     #store-slide .head {
         font-size: 4rem;
+    }
+    .one-image h4 {
+        font-size: 3rem;
+        margin-bottom: 0px;
     }
 
 }
@@ -410,6 +414,10 @@
     }
     #get-ten span {
         font-size: .9rem;
+    }
+/*product detail*/
+    #store-content h3 {
+        margin-top: 1rem;
     }
 }
 
