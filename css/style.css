@@ -995,6 +995,103 @@ ul.cate-item {
 #related-pros .prev-icon-outside {
     right: 4%;
 }
+/*about us*/
+.about_slide_content {
+    color: white;
+}
+.about_slide_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.about_slide_content .sub-head {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.about_slide_content .head {
+    font-size: 3rem;
+}
+.about_slide_content .subcribe-head {
+    font-size: 1.2rem;
+    margin: -.5rem auto 1rem;
+    display: block;
+}
+.red-color {
+    color: #ff4081;
+}
+/*about*/
+.about-sidebar img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.about-sidebar ul {
+    list-style-image: url('../images/diamond.png');
+    margin-top: 32%;
+}
+.about-sidebar ul li {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: .5rem;
+}
+.about-sidebar ul li:hover a{
+    color: #ff4081;
+}
+.about-sidebar ul li a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.client {
+    height: 40rem;
+}
+.client-one, .client-two, .client-three, .client-four, .client-five {
+    position: absolute;
+}
+.client-one {
+    width: 15%;
+    top: 70%;
+    left: 20%;
+}
+.client-two {
+    width: 20%;
+    top: 20%;
+    left: 14%;
+}
+.client-three {
+    width: 30%;
+    top: 25%;
+    left: 30%;
+}
+.client-four {
+    width: 10%;
+    top: 15%;
+    left: 59%;
+}
+.client-five {
+    width: 20%;
+    top: 50%;
+    left: 62%;
+}
+#about-content {
+    font-family: OpenSans;
+}
+#about-content p, #about-content ul {
+    color: #acacac;
+    font-size: 1rem;
+}
+.about-sidebar ul li a {
+    font-family: OpenSans;
+    color: #acacac;
+}
+.client img {
+    border: 5px solid #ebebeb;
+    border-radius: 50%;
+}
+
 
 
 

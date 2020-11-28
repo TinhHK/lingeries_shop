@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no, user-scalable=no">
+        <title>Lingeries Shop</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700">
+        <link rel="stylesheet" href="css/hc-offcanvas-nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+    </head>
+
+    <body>
+
+        <!--    header for desktop-->
+        <div class="d-none d-lg-block top-menu"></div>
+        <!--    menu desktop-->
+        <div class="d-none d-lg-block container sticky">
+            <div class="row align-items-center">
+                <div class=" col-lg-3">
+                    <img src="images/logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <nav>
+                        <ul class="desktop-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="store.html">Store</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-end align-items-center">
+                    <ul class="icon-nav">
+                        <li><a href="#" id="show-btn-desktop"><i class="fas fa-search ml-2"></i><span class="slash">/</span></a></li>
+                        <li><a href="#"><i class="fas fa-user"></i><span class="slash">/</span></a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart position-relative"><span class="cart-number">1</span></i><span class="slash">/</span></a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--    desktop search-->
+        <div id="desktop-search">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="form-search pt-5">
+                        <h4 class="mb-5">Bạn đang tìm kiếm gì?</h4>
+                        <form action="https://www.google.com" method="get" class="position-relative">
+                            <input type="text" class="input-search" placeholder="Nhập từ khóa để tìm ...">
+                            <button type="submit" class="button-search-inline">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <button class="search-close-desktop">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="full-desktop-blur"></div>
+        <!--    menu mobile-->
+        <nav id="main-nav">
+            <ul class="first-nav">
+                <li class="">
+                    <a href="#" target="">HOME</a>
+                </li>
+                <li class="">
+                    <a href="#" target="">ABOUT</a>
+                </li>
+                <li class="">
+                    <a href="#" target="">STORE</a>
+                </li>
+                <li class="">
+                    <a href="#" target="">BLOG</a>
+                </li>
+                <li class="">
+                    <a href="#" target="">PAGES</a>
+                </li>
+                <li class="">
+                    <a href="#" target="">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menumobile d-lg-none">
+            <div class="container-fluid position-relative">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-5">
+                        <a class="toggle" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/logo-icon.png" alt="icon-logo" class="logo-icon-mob">
+                    </div>
+                    <div class="col-5 d-flex justify-content-end">
+                        <i class="fas fa-search mr-3" id="search-mobile"></i>
+                        <i class="fas fa-shopping-cart position-relative"><span class="cart-number">1</span></i>
+                    </div>
+                </div>
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-12 d-flex justify-content-end">
+                        <form action="/search">
+                            <input type="text">
+                            <i class="fas fa-search mr-3"></i>
+                            <i class="fas fa-times" id="close-search-mobile"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    end header   -->
+
+        <!--       Slide-->
+        <div id="about-slide">
+            <div class="container">
+                <div class="row rm-row-m position-relative">
+                    <img class="about_slide_img img-fluid" src="images/about-slide.png" alt="">
+                    <div class="col-md-12 text-center about_slide_content">
+                        <span class="sub-head">LIKE A BOSS</span>
+                        <h1 class="head">WELCOME TO SHOP</h1>
+                        <span class="subcribe-head">Sign up and get you first VIP set for <span class="red-color">$19.95! $49.95</span> </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="breadcrumb">
+            <div class="container mt-3">
+                <ul class="">
+                    <li><a href="#">Home<span class="slash">/</span></a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="about-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 main-content">
+                        <div class="row rm-row-m">
+                           <h3>Who we are</h3>
+                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                       </div>
+                        <div class="row rm-row-m">
+                            <h3>What we do</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 about-sidebar position-relative">
+                        <img src="images/about-bg-sidebar.png" class="img-fluid" alt="">
+                        <ul>
+                            <li><a href="">Shipping & Returns</a></li>
+                            <li><a href="">Secure Shopping</a></li>
+                            <li><a href="">International Shipping</a></li>
+                            <li><a href="">Affiliates</a></li>
+                            <li><a href="">Group Sales</a></li>
+                            <li><a href="">SHOP GIFT CARDS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row rm-row-m client position-relative">
+                    <div class="client-one">
+                        <img src="images/client_1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="client-two">
+                        <img src="images/client_2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="client-three">
+                        <img src="images/client_3.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="client-four">
+                        <img src="images/client_4.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="client-five">
+                        <img src="images/client_5.png" class="img-fluid" alt="">
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+
+        <!--    footer-->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/logo.png" alt="" class="img-fluid">
+                        <p class="footer-subcribe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-vimeo-v"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="store-head">STORE INFORMATION</h4>
+                        <ul class="store-address">
+                            <li class="link-item"><i class="fas fa-map-marker-alt"></i> 609 Truong Dinh, Ha Noi City, Vietnam.
+                            </li>
+                            <li class="link-item"><i class="fas fa-mobile-alt"></i> (+084) 966.588.837</li>
+                            <li class="link-item"><i class="far fa-envelope"></i> min101092@gmail.com</li>
+                            <li class="link-item">
+                                <i class="far fa-clock"></i>
+                                <ul class="date-list">
+                                    <li><span class="date-notice">Monday - Friday:</span> 08.00-20.00</li>
+                                    <li><span class="date-notice">Saturday:</span> 09.00-15.00</li>
+                                    <li><span class="date-notice">Sunday:</span> closed</li>
+                                </ul>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h4 class="store-head">LINK</h4>
+                        <ul class="store-address">
+                            <li class="link-item">My Account</li>
+                            <li class="link-item">Contact Us</li>
+                            <li class="link-item">About Us</li>
+                            <li class="link-item">New Collection</li>
+                            <li class="link-item">Categories</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="store-head">LINK</h4>
+                        <ul class="store-address">
+                            <li class="link-item">Privacy Policy</li>
+                            <li class="link-item">Terms & Conditions</li>
+                            <li class="link-item">Free Shipping & Return</li>
+                            <li class="link-item">Blog’s</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <span>© 2017 <span class="red">Store Templates</span>. All Rights Reserved. Design by <span class="red">Mrktinh</span></span>
+                </div>
+
+            </div>
+        </footer>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="js/hc-offcanvas-nav.js"></script>
+        <script src="js/btnloadmore.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

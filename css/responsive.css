@@ -245,6 +245,19 @@
     .label-sale, .label-hot, .label-new {
         font-size: 12px;
     }
+/*    about*/
+    .about-sidebar ul {
+        margin-top: 15%;
+    }
+    .client-one {
+        top: 60%;
+    }
+    #about-content p, #about-content ul {
+        font-size: .9rem;
+    }
+    #about-content .about-sidebar ul {
+        font-size: .8rem;
+    }
     
 }
 /* Extra small devices (phones, 600px and down) */
@@ -396,6 +409,20 @@
     #store-slide .button-shop {
         font-size: 0.5rem;
     }
+/*    about*/
+    .about_slide_content .sub-head {
+        font-size: .8rem;
+        margin-top: 0;
+    }
+    .about_slide_content .head {
+        font-size: 1.5rem;
+    }
+    .about_slide_content .subcribe-head {
+        font-size: .8rem;
+    }
+    .about-sidebar ul {
+        margin-top: 30%;
+    }
     
 }
 @media only screen and (max-width: 426px) {
@@ -418,6 +445,24 @@
 /*product detail*/
     #store-content h3 {
         margin-top: 1rem;
+    }
+    .about-sidebar img {
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .about-sidebar ul {
+        margin-left: 10%;
+    }
+    .client {
+        height: 30rem;
+    }
+    .client-one {
+        top: 50%;
+    }
+    .client-five {
+        top: 40%;
     }
 }
 

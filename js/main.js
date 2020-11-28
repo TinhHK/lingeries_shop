@@ -216,6 +216,11 @@ $(document).ready(function(){
         autoplay: false,
         autoplaySpeed: 2000
     });
+    $('#about-slide .container').slick({
+        arrows: false,
+        autoplay: false,
+        autoplaySpeed: 2000
+    });
     (function($) {
         // price slide range
         $( "#price-range-slider" ).slider({
