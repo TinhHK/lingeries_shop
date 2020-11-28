@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no, user-scalable=no">
+        <title>Lingeries Shop</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700">
+        <link rel="stylesheet" href="css/hc-offcanvas-nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+    </head>
+
+    <body>
+
+        <!--    header for desktop-->
+        <div class="d-none d-lg-block top-menu"></div>
+        <!--    menu desktop-->
+        <div class="d-none d-lg-block container sticky">
+            <div class="row align-items-center">
+                <div class=" col-lg-3">
+                    <img src="images/logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <nav>
+                        <ul class="desktop-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="store.html">Store</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-end align-items-center">
+                    <ul class="icon-nav">
+                        <li><a href="#" id="show-btn-desktop"><i class="fas fa-search ml-2"></i><span class="slash">/</span></a></li>
+                        <li><a href="#"><i class="fas fa-user"></i><span class="slash">/</span></a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart position-relative"><span class="cart-number">1</span></i><span class="slash">/</span></a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--    desktop search-->
+        <div id="desktop-search">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="form-search pt-5">
+                        <h4 class="mb-5">Bạn đang tìm kiếm gì?</h4>
+                        <form action="https://www.google.com" method="get" class="position-relative">
+                            <input type="text" class="input-search" placeholder="Nhập từ khóa để tìm ...">
+                            <button type="submit" class="button-search-inline">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <button class="search-close-desktop">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="full-desktop-blur"></div>
+        <!--    menu mobile-->
+        <nav id="main-nav">
+            <ul class="first-nav">
+                <li class="">
+                    <a href="#" target="">HOME</a>
+                </li>
+                <li class="">
+                    <a href="#" target="">ABOUT</a>
+                </li>
+                <li class="">
+                    <a href="#" target="">STORE</a>
+                </li>
+                <li class="">
+                    <a href="#" target="">BLOG</a>
+                </li>
+                <li class="">
+                    <a href="#" target="">PAGES</a>
+                </li>
+                <li class="">
+                    <a href="#" target="">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menumobile d-lg-none">
+            <div class="container-fluid position-relative">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-5">
+                        <a class="toggle" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/logo-icon.png" alt="icon-logo" class="logo-icon-mob">
+                    </div>
+                    <div class="col-5 d-flex justify-content-end">
+                        <i class="fas fa-search mr-3" id="search-mobile"></i>
+                        <i class="fas fa-shopping-cart position-relative"><span class="cart-number">1</span></i>
+                    </div>
+                </div>
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-12 d-flex justify-content-end">
+                        <form action="/search">
+                            <input type="text">
+                            <i class="fas fa-search mr-3"></i>
+                            <i class="fas fa-times" id="close-search-mobile"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    end header   -->
+
+        <!--       Slide-->
+        <div id="about-slide">
+            <div class="container">
+                <div class="row rm-row-m position-relative">
+                    <img class="contact_slide_img img-fluid" src="images/contact-slide.png" alt="">
+                    <div class="col-md-12 text-center contact_slide_content">
+                        <h1 class="head text-black">THANK YOU!</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="breadcrumb">
+            <div class="container mt-3">
+                <ul class="">
+                    <li><a href="#">Home<span class="slash">/</span></a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contact-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3><span class="text-black text-bold">Please do</span> get in touch</h3>
+                        <p>You already know what we do. Now all you have to do is get in touch 
+                            with us. Give us a call, shoot us an email, or drop in for some 
+                            wonderfully brewed coffee. We want to get the conversation started.</p>
+                            
+                        <h3><span class="text-black text-bold">Infomation</span> us</h3>
+                        <ul class="infomation">
+                            <li><a href="" class="text-gray"><span class="text-bold upper-case">Address Office:</span> 609 Truong Dinh, Ha Noi City, Vietnam.</a></li>
+                            <li><a href="" class="text-gray"><span class="text-bold upper-case">Phone:</span> (+084) 966.588.837</a></li>
+                            <li><a href="" class="text-gray"><span class="text-bold upper-case">Email:</span> min101092@gmail.com</a></li>
+                            <li><a href="" class="text-pink upper-case text-bold">Address store’s: </a></li>
+                            <li><a href="" class="text-gray"><span class="upper-case text-black text-bold">Store 1:</span> 609 Truong Dinh, Ha Noi City, Vietnam.</a></li>
+                            <li><a href="" class="text-gray"><span class="upper-case text-black text-bold">Store 1:</span> 609 Truong Dinh, Ha Noi City, Vietnam.</a></li>
+                            <li><a href="" class="text-gray"><span class="upper-case text-black text-bold">Store 1:</span> 609 Truong Dinh, Ha Noi City, Vietnam.</a></li>
+                            <li><a href="" class="text-gray"><span class="upper-case text-black text-bold">Store 1:</span> 609 Truong Dinh, Ha Noi City, Vietnam.</a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <h3><span class="text-black text-bold">Drop us</span> a line</h3>
+                        <form id="form-contact" class="mt-4">
+                            <div class="form-group">
+                                <input type="text" class="form-contact"  placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-contact" placeholder="Your email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-contact" rows="9" placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row rm-row-m mb-3">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.97785450628!2d105.80194390789306!3d21.02273601624802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSGFub2ksIEhvw6BuIEtp4bq_bSwgSGFub2ksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1606555720409!5m2!1sen!2s" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <!--    footer-->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/logo.png" alt="" class="img-fluid">
+                        <p class="footer-subcribe">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-vimeo-v"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="store-head">STORE INFORMATION</h4>
+                        <ul class="store-address">
+                            <li class="link-item"><i class="fas fa-map-marker-alt"></i> 609 Truong Dinh, Ha Noi City, Vietnam.
+                            </li>
+                            <li class="link-item"><i class="fas fa-mobile-alt"></i> (+084) 966.588.837</li>
+                            <li class="link-item"><i class="far fa-envelope"></i> min101092@gmail.com</li>
+                            <li class="link-item">
+                                <i class="far fa-clock"></i>
+                                <ul class="date-list">
+                                    <li><span class="date-notice">Monday - Friday:</span> 08.00-20.00</li>
+                                    <li><span class="date-notice">Saturday:</span> 09.00-15.00</li>
+                                    <li><span class="date-notice">Sunday:</span> closed</li>
+                                </ul>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h4 class="store-head">LINK</h4>
+                        <ul class="store-address">
+                            <li class="link-item">My Account</li>
+                            <li class="link-item">Contact Us</li>
+                            <li class="link-item">About Us</li>
+                            <li class="link-item">New Collection</li>
+                            <li class="link-item">Categories</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="store-head">LINK</h4>
+                        <ul class="store-address">
+                            <li class="link-item">Privacy Policy</li>
+                            <li class="link-item">Terms & Conditions</li>
+                            <li class="link-item">Free Shipping & Return</li>
+                            <li class="link-item">Blog’s</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <span>© 2017 <span class="red">Store Templates</span>. All Rights Reserved. Design by <span class="red">Mrktinh</span></span>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="js/hc-offcanvas-nav.js"></script>
+        <script src="js/btnloadmore.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

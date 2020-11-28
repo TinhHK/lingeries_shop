@@ -258,6 +258,13 @@
     #about-content .about-sidebar ul {
         font-size: .8rem;
     }
+/*    contact*/
+    .contact_slide_content .head {
+        padding: 3rem;
+    }
+    #map {
+        height: 15rem;
+    }
     
 }
 /* Extra small devices (phones, 600px and down) */
@@ -463,6 +470,20 @@
     }
     .client-five {
         top: 40%;
+    }
+/*    contact*/
+    .contact_slide_content .head {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+    #map {
+        height: 10rem;
+    }
+    #contact-content h3 {
+        font-size: 1.5rem;
+    }
+    #form-contact {
+        margin-bottom: 1rem;
     }
 }
 

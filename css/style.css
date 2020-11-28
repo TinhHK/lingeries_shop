@@ -999,7 +999,7 @@ ul.cate-item {
 .about_slide_content {
     color: white;
 }
-.about_slide_img {
+.about_slide_img, .contact_slide_img {
     position: absolute;
     left: 0;
     top: 0;
@@ -1091,8 +1091,68 @@ ul.cate-item {
     border: 5px solid #ebebeb;
     border-radius: 50%;
 }
-
-
+/*contact*/
+.contact_slide_content .head {
+    font-size: 3rem;
+    padding: 5rem;
+}
+.text-black {
+    color: #464646;
+}
+.text-gray {
+    color: #939393;
+}
+.text-bold {
+    font-weight: 700;
+}
+#contact-content {
+    font-family: OpenSans;
+    color: #939393;
+}
+#contact-content h3 {
+    font-size: 1.875rem;
+}
+#contact-content p {
+    font-size: 0.75rem;
+}
+#contact-content .infomation {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 0.75rem;
+}
+.upper-case {
+    text-transform: uppercase;
+}
+.text-pink {
+    color: #ff1845;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.infomation li {
+    padding: 1rem 0rem;
+}
+#form-contact {
+    font-size: 0.75rem;
+}
+#form-contact button {
+    background: #ff4081;
+    color: white;
+    font-size: 0.75rem;
+}
+.form-contact {
+    width: 100%;
+    padding: .4rem;
+    border: 1px solid #939393;
+    border-radius: .5rem;
+}
+.form-contact:focus {
+    outline: none;
+}
+#map {
+    width: 100%;
+    height: 20rem;
+}
 
 
 
